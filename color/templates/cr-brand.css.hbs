@@ -1,0 +1,32 @@
+/*
+ *  Code Rabbit Brand Palette
+ *  v{{version}}
+ *
+ *  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+:root {
+
+/*  General
+ *  ─────────────────────────────────── */
+
+{{#each general as |color|}}
+  --cr-{{color.name}}: {{color.hex}};
+{{#with (hex2rgb color.hex) as |rgb|}}
+  --cr-{{color.name}}-rgb: {{rgb.r}}, {{rgb.g}}, {{rgb.b}};
+{{/with}}
+{{/each}}
+{{#each colors as |color|}}
+
+
+/*  {{capitalize color.name}}
+ *  ─────────────────────────────────── */
+
+{{#each color.hex as |hex index|}}
+  --cr-{{color.name}}-{{index}}: {{hex}};
+{{#with (hex2rgb hex) as |rgb|}}
+  --cr-{{color.name}}-{{index}}-rgb: {{rgb.r}}, {{rgb.g}}, {{rgb.b}};
+{{/with}}
+{{/each}}
+{{/each}}
+
+}

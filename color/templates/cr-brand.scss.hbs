@@ -1,0 +1,48 @@
+//
+//  Code Rabbit Brand Palette
+//  v{{version}}
+//
+//  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+//  General
+//  ───────────────────────────────────
+
+{{#each general as |color|}}
+$cr-{{color.name}}:         {{color.hex}};
+{{/each}}
+
+
+{{#each colors as |color|}}
+//  {{capitalize color.name}}
+//  ───────────────────────────────────
+
+$cr-{{color.name}}-list: (
+{{#each color.hex as |hex index|}}
+  "{{index}}": {{hex}}{{#unless @last}},{{/unless}}
+{{/each}}
+);
+
+$cr-{{color.name}}-0: map-get($cr-{{color.name}}-list, "0");
+$cr-{{color.name}}-1: map-get($cr-{{color.name}}-list, "1");
+$cr-{{color.name}}-2: map-get($cr-{{color.name}}-list, "2");
+$cr-{{color.name}}-3: map-get($cr-{{color.name}}-list, "3");
+$cr-{{color.name}}-4: map-get($cr-{{color.name}}-list, "4");
+$cr-{{color.name}}-5: map-get($cr-{{color.name}}-list, "5");
+$cr-{{color.name}}-6: map-get($cr-{{color.name}}-list, "6");
+$cr-{{color.name}}-7: map-get($cr-{{color.name}}-list, "7");
+$cr-{{color.name}}-8: map-get($cr-{{color.name}}-list, "8");
+$cr-{{color.name}}-9: map-get($cr-{{color.name}}-list, "9");
+
+
+{{/each}}
+//  Color list
+//  ───────────────────────────────────
+
+$cr-color-spectrum:   {{spectrum}};
+
+$cr-color-list: (
+{{#each colors as |color|}}
+  $cr-{{color.name}}-list:      "{{color.name}}"{{#unless @last}},{{/unless}}
+{{/each}}
+);

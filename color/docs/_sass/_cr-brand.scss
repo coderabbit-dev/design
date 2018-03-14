@@ -1,0 +1,149 @@
+//
+//  Code Rabbit Brand Palette
+//  v0.1.0
+//
+//  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+//  General
+//  ───────────────────────────────────
+
+$cr-white:         #ffffff;
+$cr-black:         #000000;
+
+
+//  Gray
+//  ───────────────────────────────────
+
+$cr-gray-list: (
+  "0": #F7FAFC,
+  "1": #EBF1F9,
+  "2": #E0E9F5,
+  "3": #CEDDEF,
+  "4": #B7C3D1,
+  "5": #9BA6B3,
+  "6": #676F78,
+  "7": #4D535A,
+  "8": #34383C
+);
+
+$cr-gray-0: map-get($cr-gray-list, "0");
+$cr-gray-1: map-get($cr-gray-list, "1");
+$cr-gray-2: map-get($cr-gray-list, "2");
+$cr-gray-3: map-get($cr-gray-list, "3");
+$cr-gray-4: map-get($cr-gray-list, "4");
+$cr-gray-5: map-get($cr-gray-list, "5");
+$cr-gray-6: map-get($cr-gray-list, "6");
+$cr-gray-7: map-get($cr-gray-list, "7");
+$cr-gray-8: map-get($cr-gray-list, "8");
+$cr-gray-9: map-get($cr-gray-list, "9");
+
+
+//  Red
+//  ───────────────────────────────────
+
+$cr-red-list: (
+  "0": #E9503C
+);
+
+$cr-red-0: map-get($cr-red-list, "0");
+$cr-red-1: map-get($cr-red-list, "1");
+$cr-red-2: map-get($cr-red-list, "2");
+$cr-red-3: map-get($cr-red-list, "3");
+$cr-red-4: map-get($cr-red-list, "4");
+$cr-red-5: map-get($cr-red-list, "5");
+$cr-red-6: map-get($cr-red-list, "6");
+$cr-red-7: map-get($cr-red-list, "7");
+$cr-red-8: map-get($cr-red-list, "8");
+$cr-red-9: map-get($cr-red-list, "9");
+
+
+//  Purple
+//  ───────────────────────────────────
+
+$cr-purple-list: (
+  "0": #8621D0
+);
+
+$cr-purple-0: map-get($cr-purple-list, "0");
+$cr-purple-1: map-get($cr-purple-list, "1");
+$cr-purple-2: map-get($cr-purple-list, "2");
+$cr-purple-3: map-get($cr-purple-list, "3");
+$cr-purple-4: map-get($cr-purple-list, "4");
+$cr-purple-5: map-get($cr-purple-list, "5");
+$cr-purple-6: map-get($cr-purple-list, "6");
+$cr-purple-7: map-get($cr-purple-list, "7");
+$cr-purple-8: map-get($cr-purple-list, "8");
+$cr-purple-9: map-get($cr-purple-list, "9");
+
+
+//  Blue
+//  ───────────────────────────────────
+
+$cr-blue-list: (
+  "0": #1B99FF
+);
+
+$cr-blue-0: map-get($cr-blue-list, "0");
+$cr-blue-1: map-get($cr-blue-list, "1");
+$cr-blue-2: map-get($cr-blue-list, "2");
+$cr-blue-3: map-get($cr-blue-list, "3");
+$cr-blue-4: map-get($cr-blue-list, "4");
+$cr-blue-5: map-get($cr-blue-list, "5");
+$cr-blue-6: map-get($cr-blue-list, "6");
+$cr-blue-7: map-get($cr-blue-list, "7");
+$cr-blue-8: map-get($cr-blue-list, "8");
+$cr-blue-9: map-get($cr-blue-list, "9");
+
+
+//  Green
+//  ───────────────────────────────────
+
+$cr-green-list: (
+  "0": #45D016
+);
+
+$cr-green-0: map-get($cr-green-list, "0");
+$cr-green-1: map-get($cr-green-list, "1");
+$cr-green-2: map-get($cr-green-list, "2");
+$cr-green-3: map-get($cr-green-list, "3");
+$cr-green-4: map-get($cr-green-list, "4");
+$cr-green-5: map-get($cr-green-list, "5");
+$cr-green-6: map-get($cr-green-list, "6");
+$cr-green-7: map-get($cr-green-list, "7");
+$cr-green-8: map-get($cr-green-list, "8");
+$cr-green-9: map-get($cr-green-list, "9");
+
+
+//  Yellow
+//  ───────────────────────────────────
+
+$cr-yellow-list: (
+  "0": #FFC928
+);
+
+$cr-yellow-0: map-get($cr-yellow-list, "0");
+$cr-yellow-1: map-get($cr-yellow-list, "1");
+$cr-yellow-2: map-get($cr-yellow-list, "2");
+$cr-yellow-3: map-get($cr-yellow-list, "3");
+$cr-yellow-4: map-get($cr-yellow-list, "4");
+$cr-yellow-5: map-get($cr-yellow-list, "5");
+$cr-yellow-6: map-get($cr-yellow-list, "6");
+$cr-yellow-7: map-get($cr-yellow-list, "7");
+$cr-yellow-8: map-get($cr-yellow-list, "8");
+$cr-yellow-9: map-get($cr-yellow-list, "9");
+
+
+//  Color list
+//  ───────────────────────────────────
+
+$cr-color-spectrum:   8;
+
+$cr-color-list: (
+  $cr-gray-list:      "gray",
+  $cr-red-list:      "red",
+  $cr-purple-list:      "purple",
+  $cr-blue-list:      "blue",
+  $cr-green-list:      "green",
+  $cr-yellow-list:      "yellow"
+);

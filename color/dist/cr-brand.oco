@@ -1,0 +1,34 @@
+/name: Code Rabbit Brand Palette
+/version: 0.1.0
+/source: https://github.com/coderabbit-team/design/color
+
+White: #ffffff
+Black: #000000
+Grays:
+  0: #F7FAFC
+  1: #EBF1F9
+  2: #E0E9F5
+  3: #CEDDEF
+  4: #B7C3D1
+  5: #9BA6B3
+  6: #676F78
+  7: #4D535A
+  8: #34383C
+Reds:
+  0: #E9503C
+Purples:
+  0: #8621D0
+Blues:
+  0: #1B99FF
+Greens:
+  0: #45D016
+Yellows:
+  0: #FFC928
+
+Fully Saturated:
+  gray: =Grays.9
+  red: =Reds.9
+  purple: =Purples.9
+  blue: =Blues.9
+  green: =Greens.9
+  yellow: =Yellows.9
